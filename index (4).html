@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101214">
+  <meta name="description" content="Bibi Coin (BIBI27) — an early-stage community token with a long-term focus on environmental protection and public-benefit initiatives.">
+  <title>Bibi Coin (BIBI27) — Community & Purpose</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0d0f;
+      --panel: #13171a;
+      --panel-2: #191f22;
+      --text: #f4f6f5;
+      --muted: #a8b1b0;
+      --green: #a8f078;
+      --green-2: #d6ffb8;
+      --line: rgba(255,255,255,.11);
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background:
+        radial-gradient(ellipse at 75% 0%, rgba(168,240,120,.09), transparent 34rem),
+        var(--bg);
+      color: var(--text); font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: inherit; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+    header { border-bottom: 1px solid var(--line); }
+    .nav { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; font-weight: 800; letter-spacing: -.03em; }
+    .mark { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 14px; color: #11170d; background: var(--green); font-size: 20px; font-weight: 950; }
+    .brand small { display: block; color: var(--muted); font-size: 11px; font-weight: 650; letter-spacing: .13em; }
+    .navlinks { display: flex; gap: 24px; align-items: center; }
+    .navlinks a { text-decoration: none; color: var(--muted); font-size: 14px; }
+    .navlinks a:hover { color: var(--green); }
+    .hero { padding: 100px 0 86px; display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: 48px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; color: var(--green); font-size: 12px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 16px rgba(168,240,120,.8); }
+    h1 { margin: 18px 0 20px; font-size: clamp(42px, 6vw, 76px); line-height: 1.02; letter-spacing: -.065em; }
+    h1 span { color: var(--green); }
+    .lead { max-width: 650px; color: var(--muted); font-size: 18px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .btn { display: inline-flex; justify-content: center; align-items: center; min-height: 48px; padding: 0 19px; border-radius: 12px; border: 1px solid var(--line); text-decoration: none; font-weight: 750; font-size: 14px; }
+    .btn.primary { background: var(--green); border-color: var(--green); color: #10160d; }
+    .btn.secondary:hover { border-color: var(--green); color: var(--green); }
+    .hero-card { position: relative; overflow: hidden; padding: 30px; border: 1px solid rgba(168,240,120,.22); border-radius: 28px; background: linear-gradient(145deg, rgba(168,240,120,.1), rgba(255,255,255,.02) 55%), var(--panel); }
+    .orb { width: 190px; height: 190px; margin: 12px auto 24px; border-radius: 50%; display: grid; place-items: center; background: radial-gradient(circle at 35% 30%, #e4ffc9, #a8f078 42%, #4c7c39 75%, #20351c); box-shadow: 0 0 70px rgba(168,240,120,.15), inset -18px -22px 38px rgba(0,0,0,.25); color: #13200d; font-size: 56px; font-weight: 950; letter-spacing: -.08em; }
+    .token-label { color: var(--muted); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; text-align: center; }
+    .token-name { font-size: 29px; font-weight: 850; text-align: center; letter-spacing: -.04em; }
+    .ticker { color: var(--green); text-align: center; font-weight: 800; }
+    .status { display: flex; justify-content: space-between; gap: 12px; padding-top: 18px; margin-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    .status strong { color: var(--text); }
+    section { padding: 70px 0; border-top: 1px solid var(--line); }
+    .section-head { max-width: 720px; margin-bottom: 30px; }
+    h2 { margin: 0 0 12px; font-size: clamp(29px, 4vw, 43px); line-height: 1.12; letter-spacing: -.045em; }
+    .section-head p, .card p { color: var(--muted); margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { padding: 24px; background: var(--panel); border: 1px solid var(--line); border-radius: 18px; }
+    .icon { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 13px; background: rgba(168,240,120,.12); color: var(--green); font-size: 20px; margin-bottom: 18px; }
+    h3 { margin: 0 0 9px; font-size: 19px; letter-spacing: -.02em; }
+    .details { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .detail { padding: 20px; background: var(--panel); border: 1px solid var(--line); border-radius: 15px; min-width: 0; }
+    .detail span { display: block; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 8px; }
+    .detail strong { display: block; font-size: 16px; overflow-wrap: anywhere; }
+    .contract { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px !important; }
+    .copy { margin-top: 12px; padding: 8px 12px; border-radius: 9px; border: 1px solid var(--line); color: var(--green); background: transparent; cursor: pointer; font-weight: 700; }
+    .notice { margin-top: 18px; padding: 17px 19px; border-left: 3px solid var(--green); background: rgba(168,240,120,.06); border-radius: 0 12px 12px 0; color: var(--muted); font-size: 14px; }
+    .roadmap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .phase { border-top: 2px solid var(--green); padding: 20px 0 0; }
+    .phase small { color: var(--green); text-transform: uppercase; font-weight: 800; letter-spacing: .12em; }
+    .phase h3 { margin-top: 8px; }
+    footer { border-top: 1px solid var(--line); padding: 30px 0 40px; color: var(--muted); font-size: 13px; }
+    .footer-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
+    .footer-links a { color: var(--muted); }
+    @media (max-width: 760px) {
+      .nav { align-items: flex-start; padding: 17px 0; flex-direction: column; }
+      .navlinks { flex-wrap: wrap; gap: 15px; }
+      .hero { grid-template-columns: 1fr; padding: 65px 0; gap: 34px; }
+      .hero-card { max-width: 480px; width: 100%; margin: 0 auto; }
+      .grid, .roadmap { grid-template-columns: 1fr; }
+      .details { grid-template-columns: 1fr; }
+      section { padding: 52px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Bibi Coin home">
+        <span class="mark">B</span>
+        <span>BIBI COIN<small>COMMUNITY TOKEN · BIBI27</small></span>
+      </a>
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="#mission">Mission</a>
+        <a href="#token">Token details</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#disclaimer">Disclaimer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Early-stage community project</div>
+        <h1>A small token.<br><span>A bigger purpose.</span></h1>
+        <p class="lead">Bibi Coin (BIBI27) is an early-stage token on BNB Smart Chain. Its long-term direction is to build a transparent community around environmental protection and public-benefit initiatives.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://bscscan.com/token/0x8a5e69dCa12763eAEAE7397788E389EADd59A60f" target="_blank" rel="noopener noreferrer">View token on BscScan ↗</a>
+          <a class="btn secondary" href="#mission">Explore the mission</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Token summary">
+        <div class="orb" aria-hidden="true">B</div>
+        <div class="token-label">Introducing</div>
+        <div class="token-name">Bibi Coin</div>
+        <div class="ticker">$BIBI27</div>
+        <div class="status"><span>Network</span><strong>BNB Smart Chain</strong></div>
+        <div class="status"><span>Project stage</span><strong>Early development</strong></div>
+      </aside>
+    </div>
+
+    <section id="mission">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">The direction</div>
+          <h2>Build with purpose.<br>Be transparent about progress.</h2>
+          <p>The project’s intended mission is to explore ways a community can support real-world causes. Any future initiative should be announced clearly, with verifiable details and evidence of what has actually been done.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="icon" aria-hidden="true">♧</div>
+            <h3>Environmental care</h3>
+            <p>Long-term goals may include tree planting, waste reduction, and protecting natural spaces.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">≈</div>
+            <h3>Cleaner oceans</h3>
+            <p>Explore credible ocean and waterway cleanup initiatives if suitable partners and resources become available.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">♡</div>
+            <h3>Public benefit</h3>
+            <p>Consider responsible ways to support charities and community causes, with clear records before making any donation claims.</p>
+          </article>
+        </div>
+        <div class="notice"><strong>Current status:</strong> These are intended goals, not a claim that donations, charity partnerships, or cleanup programs are already active. Any confirmed activity will be documented here only after it exists and can be verified.</div>
+      </div>
+    </section>
+
+    <section id="token">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">On-chain information</div>
+          <h2>Token details</h2>
+          <p>Use the contract address below to verify the token directly on the BNB Smart Chain explorer.</p>
+        </div>
+        <div class="details">
+          <div class="detail"><span>Token name</span><strong>Bibi Coin</strong></div>
+          <div class="detail"><span>Symbol</span><strong>BIBI27</strong></div>
+          <div class="detail"><span>Network</span><strong>BNB Smart Chain (BSC)</strong></div>
+          <div class="detail"><span>Total supply</span><strong>1,000,000,000 BIBI27</strong></div>
+          <div class="detail"><span>Decimals</span><strong>18</strong></div>
+          <div class="detail">
+            <span>Contract address</span>
+            <strong class="contract" id="contract">0x8a5e69dCa12763eAEAE7397788E389EADd59A60f</strong>
+            <button class="copy" type="button" id="copyBtn">Copy address</button>
+          </div>
+        </div>
+        <div class="notice">A published contract does not by itself mean that a token has active liquidity, an exchange listing, a market price, or guaranteed utility. Check on-chain information and official announcements before interacting with any token.</div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Planned direction</div>
+          <h2>Progress, one verifiable step at a time.</h2>
+          <p>The following is a proposed direction, not a promise of completion or a fixed schedule.</p>
+        </div>
+        <div class="roadmap">
+          <article class="phase"><small>01 · Foundation</small><h3>Clear information</h3><p>Publish accurate token details, maintain accessible project information, and communicate changes openly.</p></article>
+          <article class="phase"><small>02 · Community</small><h3>Responsible growth</h3><p>Build a community and assess practical requirements, risks, and resources before announcing new features.</p></article>
+          <article class="phase"><small>03 · Public benefit</small><h3>Evaluate real initiatives</h3><p>Investigate potential environmental or charitable collaborations and publish evidence before claiming any outcome.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="disclaimer">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Important information</div>
+          <h2>Read before participating.</h2>
+          <p>BIBI27 is an early-stage crypto token and may involve substantial risk, including the possibility of losing all money used to acquire it. The project website is informational only and is not financial, legal, or tax advice.</p>
+        </div>
+        <div class="notice">No profit, price increase, exchange listing, donation, partnership, or future feature is guaranteed. Only rely on verifiable on-chain data and documented announcements. Never spend money you cannot afford to lose.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div>© <span id="year">2026</span> Bibi Coin · BIBI27</div>
+      <div class="footer-links">
+        <a href="https://bscscan.com/token/0x8a5e69dCa12763eAEAE7397788E389EADd59A60f" target="_blank" rel="noopener noreferrer">BscScan ↗</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('copyBtn').addEventListener('click', async function () {
+      const address = document.getElementById('contract').textContent.trim();
+      try {
+        await navigator.clipboard.writeText(address);
+        this.textContent = 'Copied!';
+      } catch (error) {
+        const range = document.createRange();
+        range.selectNodeContents(document.getElementById('contract'));
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        this.textContent = 'Select and copy';
+      }
+    });
+  </script>
+</body>
+</html>
